@@ -1,0 +1,174 @@
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 50
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $white
+    z-index: 2
+    box-shadow: $box-shadow
+
+  &__body
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: 70px
+    align-items: center
+
+  &__logo
+    flex: 0 0 185px
+    position: relative
+    z-index: 3
+    margin-right: 30px
+
+    span
+      color: $golden
+
+  &__info
+    display: flex
+    align-items: center
+
+    &-tel
+      margin-right: 10px
+      color: $black
+      font-size: 14px
+      font-weight: 500
+      white-space: nowrap
+
+    &-whatsapp
+      margin-right: 10px
+
+  &__link
+    font-size: 14px
+
+  img
+    max-width: 100%
+    display: block
+
+  &__burger
+    display: none
+
+  &__menu
+    position: relative
+    z-index: 3
+    display: flex
+    justify-content: space-between
+    flex: 1 1 auto
+    align-items: center
+
+  &__list
+    display: flex
+    position: relative
+    z-index: 2
+
+    li
+      list-style: none
+      margin: 0 20px 0 0
+
+      &:last-child
+        margin: 0
+
+      a
+        color: $black
+        font-size: 14px
+        font-weight: 400
+
+@media (max-width: 1200px)
+  body.lock
+    overflow: hidden
+
+  .header
+
+    &__body
+      height: 50px
+
+    &__logo
+      flex: 0 0 40px
+      z-index: 10
+
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      z-index: 10
+
+      span
+        position: absolute
+        background-color: $black
+        left: 0
+        width: 100%
+        height: 2px
+        top: 9px
+        transition: all 0.3s ease 0s
+
+      &:before, &:after
+        content: ''
+        background-color: $black
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        transition: all 0.3s ease 0s
+
+      &:before
+        top: 0
+
+      &:after
+        bottom: 0
+
+      &.active
+        span
+          transform: scale(0)
+
+        &:before
+          transform: rotate(45deg)
+          top: 9px
+
+        &:after
+          transform: rotate(-45deg)
+          bottom: 9px
+
+    &__menu
+      position: fixed
+      top: -100%
+      left: 0
+      width: 100%
+      height: 100%
+      overflow: auto
+      transition: all 0.3s ease 0s
+      background-color: $white
+      padding: 70px 10px 20px 10px
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+
+      &.active
+        top: 0
+
+    &__list
+      margin-bottom: 20px
+      display: block
+
+      li
+        margin: 0px 0px 20px 0px
+
+        a
+          font-size: 24px
+
+    &__info
+      margin-bottom: 20px
+
+      &-tel
+        font-size: 24px
+
+    &__link
+      font-size: 24px

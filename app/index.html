@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Ремонт и сервис спорттранспорта - м.Беговая | RollersLifeService</title>
+	<meta name="description"
+	      content="Ремонт и сервис гироскутеров, электросамокатов, велосипедов и SKI service. 200м от м.Беговая!">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.svg">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="header__body">
+			<a href="/" class="header__logo logo">
+				RollersLife<span>Service</span>
+			</a>
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<nav class="header__menu">
+				<ul class="header__list">
+					<li>
+						<a href="#service">Услуги</a>
+					</li>
+					<li>
+						<a href="#review">Отзывы</a>
+					</li>
+					<li>
+						<a href="#price">Стоимость</a>
+					</li>
+					<li>
+						<a href="#work">Кейсы</a>
+					</li>
+					<li>
+						<a href="#sale">Акции</a>
+					</li>
+					<li>
+						<a href="#faq">FAQ</a>
+					</li>
+					<li>
+						<a href="#contact">Контакты</a>
+					</li>
+				</ul>
+				<div class="header__info">
+					<a class="header__info-tel" href="tel:88129885354">8 812 988 53 54</a>
+					<a class="header__info-whatsapp" href="https://wa.me/79052222285" target="_blank">
+						<img src="images/dest/whatsapp.svg" alt="RollersLife Whatsapp">
+					</a>
+					<a class="header__info-telegram" href="https://t.me/Rollerslife" target="_blank">
+						<img src="images/dest/telegram.svg" alt="RollersLife Telegram">
+					</a>
+				</div>
+				<div>
+					<a class="header__link link" href="#form-callback-first">Заказать звонок</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<main class="wrapper">
+	<div class="banner" style="background: url('images/dest/banner-winter.jpg')">
+		<div class="container">
+			<div class="banner__subtitle">SKI Service за 1 час! 200м от м.Беговая</div>
+			<div class="banner__title">1&nbsp;000&nbsp;рублей<br>канты и<br>парафин</div>
+			<div class="banner__benefits">
+				<div class="banner__benefit">
+					<img class="banner__benefit-img" src="images/dest/benefits/1.png"
+					     alt="Гарантия от 1 месяца до 2 лет на все виды работ">
+					<div class="banner__benefit-text"><span>Гарантия от 1 месяца до 2 лет</span> на все виды работ</div>
+				</div>
+				<div class="banner__benefit">
+					<img class="banner__benefit-img" src="images/dest/benefits/2.png"
+					     alt="Более 10 000 человек уже выбрали наш сервис">
+					<div class="banner__benefit-text"><span>Более 10 000 человек</span> уже выбрали наш сервис</div>
+				</div>
+				<div class="banner__benefit">
+					<img class="banner__benefit-img" src="images/dest/benefits/3.png"
+					     alt="15 лет на рынке ремонта и обслуживания спорт транспорта">
+					<div class="banner__benefit-text"><span>15 лет на рынке</span> ремонта и обслуживания спорт транспорта</div>
+				</div>
+			</div>
+			<a href="#form-callback-first" class="btn btn--primary">Узнать стоимость ремонта</a>
+		</div>
+	</div>
+	<div id="form-callback-first">
+		<div class="container">
+			<form class="banner__form form">
+				<div class="form__description">
+					<p class="form__title">Бесплатный осмотр спорт транспорта и консультация с нашим специалистом</p>
+					<p class="form__subtitle">Заполните заявку и наш мастер свяжется с вами в течение 15 минут</p>
+				</div>
+				<div class="form__elements">
+					<div class="form__box">
+						<input required class="form__input" type="text" name="name" placeholder="Введите ваше имя"/>
+					</div>
+					<div class="form__box">
+						<input required class="form__input" type="tel" name="tel" placeholder="Введите ваш телефон"/>
+					</div>
+					<button type="submit" class="form__btn btn btn--primary">Получить консультацию</button>
+				</div>
+				<p class="form__thanks">Ваше сообщение успешно отправлено!</p>
+				<p class="form__text">Оставляя заявку, вы принимаете <a href="/privacy-policy.html">условия пользовательского соглашения</a>
+				</p>
+			</form>
+			<div id="result_form"></div>
+		</div>
+	</div>
+	<section id="service" class="section service">
+		<div class="container">
+			<div class="section__service">
+				<h2 class="section__title service__title">Какие услуги мы предоставляем</h2>
+				<p class="section__subtitle service__subtitle"><span>Скидка 3%</span> на ремонт при первом обращении</p>
+				<div class="service__items">
+					<div class="service__item">
+						<div class="service__item-price">500p</div>
+						<div class="service__item-img">
+							<img src="images/dest/service/1.jpg" alt="Ремонт и обслуживание гироскутеров">
+						</div>
+						<div class="service__item-text">Ремонт и обслуживание <span>гироскутеров</span></div>
+						<a href="#price" class="service__item-btn btn btn--primary">Подробнее</a>
+					</div>
+					<div class="service__item">
+						<div class="service__item-price">300p</div>
+						<div class="service__item-img">
+							<img src="images/dest/service/2.jpg" alt="Ремонт и обслуживание электросамокатов">
+						</div>
+						<div class="service__item-text">Ремонт и обслуживание <span>электросамокатов</span></div>
+						<a href="#price" class="service__item-btn btn btn--primary">Подробнее</a>
+					</div>
+					<div class="service__item">
+						<div class="service__item-price">150p</div>
+						<div class="service__item-img">
+							<img src="images/dest/service/3.jpg" alt="Ремонт и обслуживание велосипедов">
+						</div>
+						<div class="service__item-text">Ремонт и обслуживание <span>велосипедов</span></div>
+						<a href="#price" class="service__item-btn btn btn--primary">Подробнее</a>
+					</div>
+					<div class="service__item">
+						<div class="service__item-price">200p</div>
+						<div class="service__item-img">
+							<img src="images/dest/service/4.jpg" alt="Ski service сноубрды и горные лыжи">
+						</div>
+						<div class="service__item-text"><span>Ski service</span> сноубрды и горные лыжи</div>
+						<a href="#price" class="service__item-btn btn btn--primary">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="review" class="section review">
+		<div class="container">
+			<div class="section__review ">
+				<h2 class="section__title review__title">Более 10 000 довольных клиентов</h2>
+				<p class="section__subtitle review__subtitle"><span>4.8 / 5</span> рейтинг на
+					<a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.205212%2C59.988779&mode=search&oid=1239714352&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRR5knTNUD5AEfTF3osv%2BE1AEhIJZVJDG4CN7z8RCOkpcoi40j8iBQABAgQFKAowADjOs76ptuiPzjxAAkgBVc3MzD5YAGoCcnVwAJ0BzcxMPaABAKgBAL0BHVl%2FLg%3D%3D&sll=30.205212%2C59.988779&sspn=0.030813%2C0.009127&text=rollerslife%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81&z=16"
+					   target="_blank" class="yandex">Яндекс</a> по оценкам наших клиентов</p>
+				<div class="review__slick">
+					<div>
+						<div class="review__card">
+							<div class="review__info">
+								<div class="review__info-img">
+									<img src="images/dest/review/2.jpg" alt="Отзыв о RollersLife">
+								</div>
+								<div class="review__info-elements">
+									<div class="review__info-date">20.08.2020</div>
+									<div class="review__info-name">Maria L</div>
+									<div class="review__info-title">Ремонт электросамоката Xiaomi</div>
+								</div>
+							</div>
+							<div class="review__text">
+								Недавно сломался электросамокат Xiaomi, просто не включался и все. Расстроилась, что больше не будет
+								работать. Обзвонила несколько мастерских, в итоге выбрала RollersLife. Очень удобно, что ребята по
+								телефону сказали, что им нужно для предварительной диагностики,а я записала видео и отправила на вотсап.
+								Заподозрили поломку батареи и назвали примерную стоимость. В итоге, отремонтировали все за 2 дня
+								(проблема действительно была в батареи и еще несколько деталей заменили). Цена соответствовала
+								заявленной при диагностике. Сейчас катаюсь на самокате как раньше. Очень довольна, спасибо!
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="review__card">
+							<div class="review__info">
+								<div class="review__info-img">
+									<img src="images/dest/review/1.jpg" alt="Отзыв о RollersLife">
+								</div>
+								<div class="review__info-elements">
+									<div class="review__info-date">17.08.2020</div>
+									<div class="review__info-name">Алена</div>
+									<div class="review__info-title">Ремонт руля и деки самоката</div>
+								</div>
+							</div>
+							<div class="review__text">
+								Ребята очень крутые! Самокат начал скрипеть и шатался руль, обратилась в несколько мастерских выставили
+								счет как сам самокат стоил, потом обратилась в роллерслайф. Здесь провели бесплатную диагностику, мастер
+								показал и объяснил в чем проблема. Все оказалось не так страшно как говорили другие. Отремонтировали
+								меньше чем за час и вышло совсем не дорого)) И еще дали советы на будущее, чтобы ситуация не
+								повторилась.
+								Работа на 5 баллов, спасибо!
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="review__card">
+							<div class="review__info">
+								<div class="review__info-img">
+									<img src="images/dest/review/3.jpg" alt="Отзыв о RollersLife">
+								</div>
+								<div class="review__info-elements">
+									<div class="review__info-date">28.07.2020</div>
+									<div class="review__info-name">Александра Ф</div>
+									<div class="review__info-title">Контроллер и аккумулятор для Kugoo</div>
+								</div>
+							</div>
+							<div class="review__text">
+								Заказывала контроллер и аккумулятор для Kugoo (цена с учетом доставки была ниже, чем покупка в своём
+								городе + не надо ждать поставок). Ребята рассказали и подсказали, что лучше взять и сделали небольшую
+								скидку, так как это моя первая у них покупка, что очень приятно :) Посылку получила через 5 дней СДЭКом,
+								спасибо большое!
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="review__card">
+							<div class="review__info">
+								<div class="review__info-img">
+									<img src="images/dest/review/4.jpg" alt="Отзыв о RollersLife">
+								</div>
+								<div class="review__info-elements">
+									<div class="review__info-date">11.08.2020</div>
+									<div class="review__info-name">Александр Жаров</div>
+									<div class="review__info-title">Ремонт платы гироскутера</div>
+								</div>
+							</div>
+							<div class="review__text">
+								Сломался гироскутер и было не понятно, что именно случилось - просто перестал включаться. Обратился в
+								ближайшую мастерскую, ребята провели бесплатную диагностику. Оказалось дело в плате. Все быстро
+								починили, недорого и главное с гарантией! Спасибо!)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="review__btn">
+					<a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.205212%2C59.988779&mode=search&oid=1239714352&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRR5knTNUD5AEfTF3osv%2BE1AEhIJZVJDG4CN7z8RCOkpcoi40j8iBQABAgQFKAowADjOs76ptuiPzjxAAkgBVc3MzD5YAGoCcnVwAJ0BzcxMPaABAKgBAL0BHVl%2FLg%3D%3D&sll=30.205212%2C59.988779&sspn=0.030813%2C0.009127&text=rollerslife%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81&z=16"
+					   target="_blank" class="link review__link">Больше отзывов на <span class="yandex">Яндекс</span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="price" class="section price">
+		<div class="container">
+			<div class="section__price">
+				<h2 class="section__title price__title">Стоимость популярных услуг</h2>
+				<p class="section__subtitle price__subtitle"><span>Скидка 3%</span> на ремонт при первом обращении</p>
+				<div class="price__tabs tabs">
+					<ul class="tabs__caption">
+						<li class="active">Гироскутеры</li>
+						<li>Электросамокаты</li>
+						<li>Велосипеды</li>
+						<li>Ski Service</li>
+					</ul>
+					<div class="tabs__wrapper">
+						<div class="tabs__content active">
+							<table>
+								<thead>
+								<tr>
+									<th>Виды ремонтных работ</th>
+									<th>Стоимость</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th>Диагностика</th>
+									<td>бесплатно</td>
+								</tr>
+								<tr>
+									<th>Шиномонтаж</th>
+									<td>от 500р</td>
+								</tr>
+								<tr>
+									<th>Замена аккумулятора</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Ремонт аккумулятора</th>
+									<td>от 500р</td>
+								</tr>
+								<tr>
+									<th>Замена плат управления и контроллера</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Ремонт плат управления и контроллера</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена мотор колеса</th>
+									<td>от 800р</td>
+								</tr>
+								<tr>
+									<th>Ремонт мотор колеса</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена основания гироскутера</th>
+									<td>от 1 800р</td>
+								</tr>
+								<tr>
+									<th>Замена корпуса</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена bluetooth (блютуз) платы</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Замена динамика</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Замена подшипников мотор колеса</th>
+									<td>1 500р</td>
+								</tr>
+								<tr>
+									<th>Гидроизоляция</th>
+									<td>от 3 000р</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tabs__content">
+							<table>
+								<thead>
+								<tr>
+									<th>Виды ремонтных работ</th>
+									<th>Стоимость</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th>Диагностика</th>
+									<td>бесплатно</td>
+								</tr>
+								<tr>
+									<th>Замена аккумулятора</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Ремонт аккумулятора</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена контроллера</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Ремонт контроллера</th>
+									<td>от 700р</td>
+								</tr>
+								<tr>
+									<th>Ремонт дисплея</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена ручки газа и тормоза</th>
+									<td>800р</td>
+								</tr>
+								<tr>
+									<th>Ремонт ручки газа и тормоза</th>
+									<td>1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена ручек или кронштейна ручек</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Замена кронштейна, крепления обеих ручек</th>
+									<td>2 000р</td>
+								</tr>
+								<tr>
+									<th>Замена провода от дисплея до контроллера</th>
+									<td>1 500р</td>
+								</tr>
+								<tr>
+									<th>Обслуживание рулевой колонки</th>
+									<td>1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена мотор колеса</th>
+									<td>600р</td>
+								</tr>
+								<tr>
+									<th>Ремонт мотор колеса</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена заднего колеса</th>
+									<td>от 400р</td>
+								</tr>
+								<tr>
+									<th>Замена подшипников мотор колеса</th>
+									<td>1 500р</td>
+								</tr>
+								<tr>
+									<th>Замена подшипников заднего колеса</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Замена пластиковой втулки в вилке</th>
+									<td>1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена вилки</th>
+									<td>1 000р</td>
+								</tr>
+								<tr>
+									<th>Замена стакана</th>
+									<td>1 500р</td>
+								</tr>
+								<tr>
+									<th>Замена кронштейна мех. складывания (ушек)</th>
+									<td>1 300р</td>
+								</tr>
+								<tr>
+									<th>Замена деки</th>
+									<td>от 2 000р</td>
+								</tr>
+								<tr>
+									<th>Замена крышки дисплея</th>
+									<td>300р</td>
+								</tr>
+								<tr>
+									<th>Восстановление и пайка проводов</th>
+									<td>от 500р</td>
+								</tr>
+								<tr>
+									<th>Шиномонтаж мотор колеса</th>
+									<td>от 1 000р</td>
+								</tr>
+								<tr>
+									<th>Гидроизоляция</th>
+									<td>от 3 000р</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tabs__content">
+							<table>
+								<thead>
+								<tr>
+									<th>Виды ремонтных работ</th>
+									<th>Стоимость</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th>Замена системы шатунов с переустановкой педалей</th>
+									<td>600р</td>
+								</tr>
+								<tr>
+									<th>Замена каретки/картриджа (включая снятие/установку шатунов)</th>
+									<td>900р</td>
+								</tr>
+								<tr>
+									<th>Замена педалей</th>
+									<td>200р</td>
+								</tr>
+								<tr>
+									<th>Регулировка переднего/заднего переключателя</th>
+									<td>300р</td>
+								</tr>
+								<tr>
+									<th>Замена или укорачивание гидролинии с прокачкой (1 сторона)</th>
+									<td>900р</td>
+								</tr>
+								<tr>
+									<th>Замена рубашки троса тормоза</th>
+									<td>250р</td>
+								</tr>
+								<tr>
+									<th>Замена троса тормоза (без регулировки)</th>
+									<td>250р</td>
+								</tr>
+								<tr>
+									<th>Торцовка креплений для дискового тормоза</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Замена барабана («ореха») задней втулки</th>
+									<td>1 200р</td>
+								</tr>
+								<tr>
+									<th>Переборка втулки переднего колеса со смазкой</th>
+									<td>600р</td>
+								</tr>
+								<tr>
+									<th>Регулировка конусов передней втулки</th>
+									<td>300р</td>
+								</tr>
+								<tr>
+									<th>Регулировка/ремонт складного механизма</th>
+									<td>от 200р</td>
+								</tr>
+								<tr>
+									<th>Дорезка резьбы на резьбовом штоке вилки</th>
+									<td>500р</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tabs__content">
+							<table>
+								<thead>
+								<tr>
+									<th>Виды ремонтных работ</th>
+									<th>Стоимость</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th>Заточка кантов</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Парафин</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Шлифовка</th>
+									<td>500р</td>
+								</tr>
+								<tr>
+									<th>Заливка царапин</th>
+									<td>от 300р</td>
+								</tr>
+								<tr>
+									<th>Заклейка расслоений</th>
+									<td>от 300р</td>
+								</tr>
+								<tr>
+									<th>Установка и снятие креплений</th>
+									<td>от 200р</td>
+								</tr>
+								<tr>
+									<th>Регулировка креплений</th>
+									<td>300р</td>
+								</tr>
+								<tr>
+									<th>Консервация</th>
+									<td>от 500р</td>
+								</tr>
+								<tr>
+									<th>Установка бамперов</th>
+									<td>от 400р</td>
+								</tr>
+								<tr>
+									<th>Помыть сноуборд / горные лыжи</th>
+									<td>400р</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p style="margin: 30px 0; font-size: 12px; text-align: center;">Цены указаны только за работу мастера, запасные
+				части в стоимость не включены.</p>
+		</div>
+	</section>
+	<section id="work" class="section work">
+		<div class="container">
+			<div class="section__work">
+				<h2 class="section__title work__title">Примеры наших работ</h2>
+				<p class="section__subtitle work__subtitle">с различной сложностью ремонта</p>
+				<div class="work__items work__slick">
+					<div class="work__item">
+						<div class="work__pics">
+							<img src="images/dest/works/3/1.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/3/2.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/3/3.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/3/4.jpg" class="work__pic" alt="Фото работы">
+						</div>
+						<div class="work__description">
+							<div class="work__description-title">Ремонт электросамоката Xiaomi m365 PRO</div>
+							<ul class="work__description-list">
+								<li><span>Стоимость ремонта</span> 950р</li>
+								<li><span>Время работы</span> 30 минут</li>
+								<li><span>Гарантия</span> 6 месяцев</li>
+							</ul>
+							<div class="work__description-text">
+								Клиент обратилась к нам с проблемой, что самокат не выключается😪 и не выходит из режима eco, не
+								реагирует на кнопку включения, проблема к сожалению стандартная и известная, после дождика🌧️ заливается
+								бортовой компьютер🖥️.
+								За пол часа🕞 разобрали верх, отмыли все окислы, просушили, разобрали кнопку, очень сложно было её
+								спасти без замены, но у нас получилось.
+								Покрыли плату защитным лаком и отдали готовый рабочий самокат.
+							</div>
+						</div>
+					</div>
+					<div class="work__item">
+						<div class="work__pics">
+							<img src="images/dest/works/1/1.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/1/2.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/1/3.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/1/4.jpg" class="work__pic" alt="Фото работы">
+						</div>
+						<div class="work__description">
+							<div class="work__description-title">Шиномонтаж электросамоката Kugoo G Booster</div>
+							<ul class="work__description-list">
+								<li><span>Стоимость ремонта</span> 500р</li>
+								<li><span>Время работы</span> 30 минут</li>
+								<li><span>Гарантия</span> 12 месяцев</li>
+							</ul>
+							<div class="work__description-text">
+								<ul>
+									<li>Шиномонтаж электросамоката Kuggo G booster</li>
+									<li>Установка отличной шоссейной резины Hota 90/55-6.5 на переднее и заднее колеса, безкамерки</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="work__item">
+						<div class="work__pics">
+							<img src="images/dest/works/2/1.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/2/2.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/2/3.jpg" class="work__pic" alt="Фото работы">
+							<img src="images/dest/works/2/4.jpg" class="work__pic" alt="Фото работы">
+						</div>
+						<div class="work__description">
+							<div class="work__description-title">Ремонт электросамоката Kugoo S3</div>
+							<ul class="work__description-list">
+								<li><span>Стоимость ремонта</span> 750р</li>
+								<li><span>Время работы</span> 1 час</li>
+								<li><span>Гарантия</span> 6 месяцев</li>
+							</ul>
+							<div class="work__description-text">
+								Сломался штифт узла складывания. Для его замены нужно было разобрать пол самоката. Справились за час.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="work__link">
+					<a href="https://www.instagram.com/rollerslifeservice/" target="_blank" class="link">Больше примеров наших
+						работ в <span>Instagram</span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sale" class="section sale">
+		<div class="container">
+			<div class="section__sale">
+				<h2 class="section__title">Специальные предложения</h2>
+				<p class="section__subtitle sale__subtitle">и акции в ServiceLife</p>
+				<div class="sale__items sale__slick">
+					<div class="sale__item">
+						<img src="images/dest/sales/1.jpg" alt="Узнай стоимость ремонта онлайн" class="sale__item-img">
+						<div class="sale__item-text">Узнай стоимость ремонта онлайн</div>
+					</div>
+					<div class="sale__item">
+						<img src="images/dest/sales/2.jpg" alt="Узнай стоимость ремонта онлайн" class="sale__item-img">
+						<div class="sale__item-text">1 000р - канты и парафин Ski Service за 1 час</div>
+					</div>
+					<div class="sale__item">
+						<img src="images/dest/sales/3.jpg" alt="Узнай стоимость ремонта онлайн" class="sale__item-img">
+						<div class="sale__item-text">Меняем старый самокат на новый с гарантией</div>
+					</div>
+					<div class="sale__item">
+						<img src="images/dest/sales/4.jpg" alt="Узнай стоимость ремонта онлайн" class="sale__item-img">
+						<div class="sale__item-text">Скидка 20% на самокаты в наличии</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="order" class="section order">
+		<div class="container">
+			<div class="section__order">
+				<form class="order__form form">
+					<div class="form__description">
+						<p class="form__title">Оставьте заявку</p>
+						<p class="form__subtitle">И в течение 15 минут получите консультацию с нашим специалистом</p>
+					</div>
+					<div class="form__elements">
+						<input required class="form__input" type="text" placeholder="Введите ваше имя" name="name"/>
+						<input required class="form__input" type="tel" placeholder="Введите ваш телефон" name="tel"/>
+						<button type="submit" class="form__btn btn btn--primary">Получить консультацию</button>
+						<p class="form__thanks">Ваше сообщение успешно отправлено!</p>
+						<p class="form__text">Оставляя заявку, вы принимаете <a href="/privacy-policy.html">условия пользовательского соглашения</a>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<section id="faq" class="section faq">
+		<div class="container">
+			<div class="section__faq">
+				<h2 class="section__title">Часто задаваемые вопросы</h2>
+				<p class="section__subtitle faq__subtitle">Если вы не нашли ответа на свой вопрос, то мы предоставим вам
+					персональную консультацию по телефону 8 812 988 53 54</p>
+				<button class="accordion">Ваш сервисный центр ремонтирует механические неисправности?</button>
+				<div class="panel">
+					<p>Да, наши специалисты также ремонтируют механические элементы электросамокатов и гироскутеров.</p>
+				</div>
+				<button class="accordion">Предоставляете ли вы скидки на обслуживание?</button>
+				<div class="panel">
+					<p>Для всех новых клиентов действует скидка 3% на любой ремонт, а также для всех клиентов дигностика всегда
+						бесплатно!</p>
+				</div>
+				<button class="accordion">Есть ли у вас необходимые запчасти, чтобы быстро отремонтировать поломку?</button>
+				<div class="panel">
+					<p>Да, у нас есть в наличии основные и популярные запчасти для ремонта электросамокатов, гироскутеров,
+						велосипедов и другого спорт транспорта.</p>
+				</div>
+				<button class="accordion">Как долго происходит ремонт электросамоката?
+				</button>
+				<div class="panel">
+					<p>Все зависит от причин поломки и загруженности мастерской. Если поломка простая, то отремонтируем сразу при
+						вас, если сложная, все зависит от то, что сломалось. Так же перед летним сезоном много обращений на плановое
+						ТО электросамокатов и гироскутеров, это может повлиять на скорость работы.</p>
+				</div>
+				<button class="accordion">Какие запчасти вы используете?</button>
+				<div class="panel">
+					<p>Мы заказываем запчасти прямо с завода, где был произведен электросамокат. Это позволяет уменьшить процент
+						несоответствия заявленной детали, что может повлиять на время ремонта электросамоката.</p>
+				</div>
+				<button class="accordion">Какие виды услуг вы предоставляете?</button>
+				<div class="panel">
+					<p>Мы предоставляем полный спектр сервисных услуг. От простой консультации и диагностики до сложных ремонтов
+						дек и электроники. Всю информацию вы можете узнать на странице самокат-сервиса.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="feedback" class="section section--bottom feedback">
+		<div class="container">
+			<div class="section__feedback">
+				<h2 class="section__title feedback__title">Уже были у нас?</h2>
+				<p class="section__subtitle feedback__subtitle">Оставьте свой отзыв и помогите нам стать еще лучше 😉</p>
+				<div class="feedback__btn">
+					<a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.205212%2C59.988779&mode=search&oid=1239714352&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRR5knTNUD5AEfTF3osv%2BE1AEhIJZVJDG4CN7z8RCOkpcoi40j8iBQABAgQFKAowADjOs76ptuiPzjxAAkgBVc3MzD5YAGoCcnVwAJ0BzcxMPaABAKgBAL0BHVl%2FLg%3D%3D&sll=30.205212%2C59.988779&sspn=0.030813%2C0.009127&text=rollerslife%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81&z=16"
+					   target="_blank" class="btn btn--primary">Оставить отзыв</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="contact" class="section section--bottom">
+		<div class="section__contact contact">
+			<div class="container contact__wrapper">
+				<div class="contact__form">
+					<div class="contact__form-title">Свяжитесь с нами любым удобным способом</div>
+					<div class="contact__info">
+						<a href="tel:88129885354" class="contact__info-item">8 812 988 53 54</a>
+						<a href="https://wa.me/79052222285" target="_blank" class="contact__info-item">
+							<img src="images/dest/whatsapp.svg" alt="RollersLife Whatsapp">
+						</a>
+						<a href="https://t.me/Rollerslife" target="_blank" class="contact__info-item">
+							<img src="images/dest/telegram.svg" alt="RollersLife Telegram">
+						</a>
+					</div>
+					<div class="contact__info">
+						<a href="mailto:info@servicelife.ru" class="contact__info-item">info@servicelife.ru</a>
+						<a href="https://www.instagram.com/rollerslifeservice" target="_blank" class="contact__info-item">
+							<img src="images/dest/inst.svg" alt="RollersLife email">
+						</a>
+						<a href="https://vk.com/rollerslifeservice" target="_blank" class="contact__info-item">
+							<img src="images/dest/vk.svg" alt="RollersLife VK">
+						</a>
+					</div>
+					<div class="contact__form-subtitle">Или приезжайте к нам в гости</div>
+					<div class="contact__form-address">
+						<div><span class="subway">м.</span> Беговая, ул. Савушкина, д. 141, ТРК «Меркурий»</div>
+						<div>Вход с ул. Беговая в Спорт База, секция №7</div>
+						<div>
+							<span>пн-пт</span> с 11 до 20<br>
+							<span>сб-вс</span> с 11 до 20
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="YaMaps" class="contact__map"></div>
+		</div>
+	</div>
+</main>
+<footer class="footer">
+	<div class="container">
+		<p class="footer__copyright"><a href="/" class="footer__logo logo">RollersLife<span>Service</span></a> © 2015 — 2020
+			Ремонт и обслуживание спорт транспорта. <a href="/privacy-policy.html">Политика конфиденциальности</a></p>
+	</div>
+</footer>
+
+<a href="#up" class="pageup">
+	<img src="images/dest/arrow-up.svg" alt="up">
+</a>
+
+<script src="/js/app.min.js"></script>
+</body>
+</html>

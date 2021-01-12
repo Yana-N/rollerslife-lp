@@ -1,0 +1,141 @@
+// USER VARIABLES SECTION
+
+$fontsize: 16px // Body Font Size
+$textcolor: #3F3F3F // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$gothampro: 'Gotham Pro', sans-serif
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		font-display: swap
+		src: local($fname), url($furl) format('woff2')
+
+@include font('Gotham Pro', normal, 400, '../fonts/src/GothamPro.woff')
+@include font('Gotham Pro', medium, 500, '../fonts/src/GothamPro-Medium.woff')
+@include font('Gotham Pro', bold, 700, '../fonts/src/GothamPro-Bold.woff')
+@include font('Gotham Pro', black, 900, '../fonts/src/GothamPro-Black.woff')
+
+// GENERAL DOCUMENT STYLES
+
+*,*:before,*:after
+	padding: 0
+	margin: 0
+	border: 0
+	box-sizing: border-box
+	outline: none
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $textcolor
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+html, body
+	height: 100%
+
+body
+	display: flex
+	flex-direction: column
+	height: 100%
+	font-family: $gothampro
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $textcolor
+
+.container
+	margin: 0 auto
+	padding: 0 10px
+	max-width: 1160px
+	width: 100%
+
+@media (max-width: 1200px)
+	.container
+		max-width: 970px
+
+@media (max-width: 992px)
+	.container
+		max-width: 750px
+
+@media (max-width: 767px)
+	.container
+		max-width: none
+
+img
+	max-width: 100%
+
+a
+	text-decoration: none
+	transition: all .3s
+
+	&:hover
+		opacity: .8
+
+.wrapper
+	&__form
+		margin-top: -70px
+		margin-bottom: 50px
+
+.btn
+	display: inline-block
+	padding: 20px 40px
+	background: transparent
+	color: $white
+	font-weight: 700
+	transition: all .3s
+	cursor: pointer
+	border-radius: 10px
+	font-size: 14px
+
+	&:hover
+		opacity: .8
+
+	&--primary
+		background: $golden-gradient
+
+.link
+	position: relative
+	padding-bottom: 5px
+	border-bottom: 1px solid $gray
+	color: $black
+
+.yandex
+	display: inline-block
+	color: $black
+
+	&::first-letter
+		color: $red
+
+.pageup
+	display: none
+	background: linear-gradient(180deg, #ffd74a 0, #ffa400 100%)
+	position: fixed
+	width: 40px
+	height: 40px
+	bottom: 25px
+	left: 25px
+	border-radius: 50%
+	text-align: center
+
+	img
+		margin-top: 12px
+		vertical-align: middle
+
+@media (max-width: 767px)
+  .btn
+	  padding: 20px 20px

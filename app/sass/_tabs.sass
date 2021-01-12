@@ -1,0 +1,100 @@
+.tabs
+
+  &__caption
+    margin-bottom: 30px
+    list-style: none
+    display: flex
+    justify-content: center
+
+    li
+      border: 1px solid $gray
+      border-right: none
+      padding: 20px 44px
+      font-weight: 500
+      cursor: pointer
+
+      &:first-child
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+
+      &:last-child
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+        border-right: 1px solid $gray
+
+      &.active
+        background: $golden-gradient
+        color: $white
+        border: none
+
+  &__wrapper
+    position: relative
+    box-shadow: $box-shadow
+
+    &::after
+      @include sub-card
+
+  &__content
+    display: none
+    justify-content: space-between
+    max-height: 522px
+    overflow: auto
+    border-radius: 10px
+
+  &__content.active
+    display: flex
+
+    table
+      width: 100%
+      background-color: transparent
+      border-collapse: collapse
+
+      thead
+
+        th
+          position: sticky
+          top: 0
+          background-color: $light-gray
+          padding: 20px 30px
+          border: none
+
+      tbody
+        th, td
+          padding: 15px 70px
+          font-weight: 400
+          border-bottom: 1px solid $light-gray
+          text-align: left
+
+        td
+          border-left: 1px solid $light-gray
+
+        tr
+          &:hover
+            background-color: $light-gray
+
+          &:last-child
+            th, td
+              border-bottom: none
+
+@media (max-width: 992px)
+  .tabs__caption
+    flex-direction: column
+    text-align: center
+
+    li
+      padding: 20px
+      border-radius: 10px
+      border: 1px solid $gray
+      border-bottom: none
+
+      &:last-child
+        border-bottom: 1px solid $gray
+
+@media (max-width: 767px)
+  .tabs__content.active table tbody td, .tabs__content.active table tbody th
+    padding: 15px 20px
+
+.tabs__content.active table thead th
+      padding: 20px 20px
+      font-size: 16px
+      line-height: 1.5

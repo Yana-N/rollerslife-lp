@@ -1,0 +1,66 @@
+.service
+
+  &__subtitle
+
+    span
+      font-weight: 700
+
+  &__items
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__item
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &-price
+      position: absolute
+      top: -20px
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 10
+      padding: 10px 35px
+      background: $golden-gradient
+      border-radius: 10px
+      color: $white
+      font-weight: 500
+
+    &-img
+      position: relative
+      margin-bottom: 25px
+      border-radius: 10px
+      box-shadow: $box-shadow
+      line-height: 0
+
+      &::after
+        @include sub-card
+
+    &-text
+      margin-bottom: 20px
+      max-width: 170px
+      text-align: center
+
+      span
+        font-weight: 700
+
+@media (max-width: 1200px)
+  .service
+    &__items
+      flex-wrap: wrap
+      justify-content: center
+
+    &__item
+      margin-bottom: 80px
+      flex-basis: 50%
+
+      &:last-child
+        margin-bottom: 0
+
+@media (max-width: 767px)
+  .service
+    &__item
+      flex-basis: 100%

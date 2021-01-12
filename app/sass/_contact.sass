@@ -1,0 +1,65 @@
+.contact
+
+  &__wrapper
+    position: relative
+
+  &__form
+    position: absolute
+    z-index: 10
+    top: 60px
+    left: 0
+    background: $white
+    max-width: 400px
+    padding: 50px
+    font-weight: 700
+    border-radius: 10px
+    box-shadow: $box-shadow
+
+    &::after
+      @include sub-card
+
+    &-title
+      margin-bottom: 20px
+      font-size: 30px
+      font-weight: 900
+      line-height: 130%
+
+    &-subtitle
+      font-size: 22px
+      font-weight: 900
+      line-height: 130%
+      max-width: 200px
+      margin-bottom: 10px
+
+    &-address
+      div
+        margin-bottom: 10px
+
+        span
+          color: $gray
+
+        .subway
+          color: $green
+
+  &__info
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+
+    &-item
+      margin-right: 14px
+      color: $black
+      line-height: 0
+
+  &__map
+    position: relative
+
+@media (max-width: 767px)
+  .contact__form
+    position: relative
+    top: 0
+    margin: 0 auto 50px
+    padding: 30px
+
+    &-title
+      font-size: 25px

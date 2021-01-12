@@ -1,0 +1,60 @@
+.accordion
+  position: relative
+  background-color: $white
+  color: $black
+  cursor: pointer
+  padding: 20px
+  width: 100%
+  border: none
+  border-radius: 10px
+  box-shadow: $box-shadow
+  text-align: left
+  outline: none
+  font-family: $gothampro
+  font-weight: 500
+  font-size: 16px
+  line-height: 130%
+  transition: 0.4s
+
+  &::before
+    @include sub-card
+
+  .active
+    color: $gray
+
+.accordion
+  &:hover
+    background-color: $light-gray
+
+  &:after
+    position: absolute
+    top: 50%
+    right: 15px
+    transform: translateY(-50%)
+    content: '+'
+    background: $golden-gradient
+    width: 25px
+    height: 25px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    color: $white
+
+  &.active:after
+    content: '-'
+
+.panel
+  position: relative
+  margin: 0 auto 30px
+  width: 90%
+  background-color: $white
+  box-shadow: $box-shadow
+  max-height: 0
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  overflow: hidden
+  transition: max-height 0.2s ease-out
+
+  p
+    padding: 30px 40px

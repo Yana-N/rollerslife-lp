@@ -1,0 +1,61 @@
+.review
+
+  &__subtitle
+
+    span
+      color: $golden
+
+  &__slick
+    margin-bottom: 20px
+
+  &__card
+    position: relative
+    max-width: 810px
+    padding: 55px
+    display: flex
+    flex-direction: column
+    box-shadow: $box-shadow
+    border-radius: 10px
+
+    &::after
+      @include sub-card
+
+  &__info
+    margin-bottom: 20px
+    display: flex
+
+
+    &-elements
+      font-size: 15px
+
+    &-img
+      margin-right: 20px
+      width: 70px
+      height: 70px
+      border-radius: 50%
+
+    &-date
+      color: $gray
+
+    &-name
+      font-weight: 700
+
+    &-title
+
+  &__text
+
+  &__btn
+    display: flex
+    justify-content: center
+
+@media (max-width: 480px)
+  .review
+
+    &__card
+      padding: 30px
+
+    &__info
+      flex-direction: column
+
+      &-img
+        margin: 0 0 10px 0

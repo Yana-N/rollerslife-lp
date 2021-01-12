@@ -1,0 +1,67 @@
+@import "slick.css"
+
+.review__slick.slick-initialized .slick-slide
+  display: flex
+  justify-content: center
+  outline: none
+  padding: 30px
+
+.sale__slick.slick-initialized .slick-slide
+  display: flex
+  justify-content: center
+  outline: none
+
+.work__slick.slick-initialized .slick-slide
+  display: flex
+  outline: none
+
+.slick-dots
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  justify-content: center
+
+  button
+    position: relative
+    margin: 0 5px
+    padding: 7px 7px
+    background-color: transparent
+    cursor: pointer
+    outline: none
+    font-size: 0
+
+    &:before
+      content: ''
+      position: absolute
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background-color: $gray
+
+  li.slick-active
+    button
+      &:before
+        background-color: $golden
+
+.slick-arrow
+  position: absolute
+  width: 20px
+  background: transparent
+  top: 50%
+  left: 0
+  transform: translateY(-50%)
+  z-index: 100
+  cursor: pointer
+  outline: none
+
+.slick-prev
+  left: 0
+
+.slick-next
+  left: auto
+  right: 0
+
+@media (max-width: 480px)
+  .review__slick.slick-initialized .slick-slide
+    padding: 0
