@@ -3,7 +3,7 @@
 $fontsize: 16px // Body Font Size
 $textcolor: #3F3F3F // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$gothampro: 'Gotham Pro', sans-serif
+$futura: 'Futura', sans-serif
 
 // FONTS LOAD SECTION
 
@@ -15,10 +15,8 @@ $gothampro: 'Gotham Pro', sans-serif
 		font-display: swap
 		src: local($fname), url($furl) format('woff2')
 
-@include font('Gotham Pro', normal, 400, '../fonts/src/GothamPro.woff')
-@include font('Gotham Pro', medium, 500, '../fonts/src/GothamPro-Medium.woff')
-@include font('Gotham Pro', bold, 700, '../fonts/src/GothamPro-Bold.woff')
-@include font('Gotham Pro', black, 900, '../fonts/src/GothamPro-Black.woff')
+@include font('Futura', normal, 400, '../fonts/src/FuturaNewBook-Reg.woff')
+@include font('Futura', normal, 500, '../fonts/src/FuturaNewMedium-Reg.woff')
 
 // GENERAL DOCUMENT STYLES
 
@@ -50,7 +48,7 @@ body
 	display: flex
 	flex-direction: column
 	height: 100%
-	font-family: $gothampro
+	font-family: $futura, 'Times New Roman'
 	font-size: $fontsize
 	min-width: 320px
 	position: relative
